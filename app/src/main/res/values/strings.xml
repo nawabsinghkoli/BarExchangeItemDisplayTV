@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Bar Exchange Item Display TV</string>
+    <string name="action_settings">Settings</string>
+    <string name="drink_name">DRINK NAME</string>
+    <string name="price">\u20B9 CURRENT PRICE</string>
+    <string name="todays_low">\u20B9 TODAY\'S LOW</string>
+    <string name="todays_high">\u20B9 TODAY\'S HIGH</string>
+    <string name="Rs">\u20B9</string>
+    <string name="trend">TREND</string>
+    <string name="local_server_address">Local Server Address</string>
+
+    <string name="poweredBy">Copyright © 2014. Romio Technologies.</string>
+    <string name="developedBy">Developed by Romiotech.com</string>
+    <string name="link">http://romiotech.com/</string>
+    <string name="title_activity_local_server_address">LocalServerAddress</string>
+</resources>

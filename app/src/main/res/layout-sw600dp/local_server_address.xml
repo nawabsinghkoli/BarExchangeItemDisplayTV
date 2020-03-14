@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Please Enter Local Server Address"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/local_server_address_TIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/rl1"
+        android:background="#ECECEC"
+        app:hintTextAppearance="@style/TextLabel_Large" >
+
+        <AutoCompleteTextView
+            android:id="@+id/local_server_address_ACTV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:padding="50dp"
+            android:backgroundTint="@color/white"
+            android:hint="Please, Enter Local Server Address"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:textColor="#000000" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/display_tv_number_TIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/local_server_address_TIL"
+        android:background="#ECECEC"
+        app:hintTextAppearance="@style/TextLabel_Large" >
+
+        <AutoCompleteTextView
+            android:id="@+id/display_tv_number_ACTV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:padding="50dp"
+            android:backgroundTint="@color/white"
+            android:hint="Please, Enter Display TV Number"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:textColor="#000000" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/save_address_Button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/display_tv_number_TIL"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/blue_button"
+        android:text="Save Local Server Address"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
